@@ -23,15 +23,17 @@ public class Solution24
 
         // Exit
     }
-    private boolean isAnagram(String str1, String str2)
+
+    public boolean isAnagram(String str1, String str2)
     {
         // Check lengths of str1 and str2. If they don't match, they can't be anagrams.
 
-        // Compare the characters in each string, going forward for str1 and backward for str2
+        // Find all characters present in str1 and their frequencies
 
-        // Return false if a mismatch occurs at any point
+        // Find all characters present in str2 and their frequencies
 
-        // Otherwise, return true
+        // Compare characters and frequencies.
+        // If any mismatches occur, return false. Otherwise, return true.
 
         return true;
     }
