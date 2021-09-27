@@ -16,7 +16,7 @@ dependencies {
 }
 
 application{
-    mainClassName = "exercise.Solution24"
+    mainClassName = "baseline.Solution24"
 }
 
 run{
