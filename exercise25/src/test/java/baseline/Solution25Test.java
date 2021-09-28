@@ -9,10 +9,37 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class Solution25Test {
+class Solution25Test
+{
+    @Test
+    void passwordValidator_case_1()
+    {
+        Solution25 sol = new Solution25();
+
+        assertEquals(0,sol.passwordValidator("12345"));
+    }
 
     @Test
-    void passwordValidator()
+    void passwordValidator_case_2()
     {
+        Solution25 sol = new Solution25();
+
+        assertEquals(1,sol.passwordValidator("abcdef"));
+    }
+
+    @Test
+    void passwordValidator_case_3()
+    {
+        Solution25 sol = new Solution25();
+
+        assertEquals(2,sol.passwordValidator("abc123xyz"));
+    }
+
+    @Test
+    void passwordValidator_case_4()
+    {
+        Solution25 sol = new Solution25();
+
+        assertEquals(3,sol.passwordValidator("1337h@xor!"));
     }
 }
