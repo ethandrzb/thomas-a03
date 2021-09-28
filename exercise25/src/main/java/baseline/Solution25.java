@@ -70,26 +70,33 @@ public class Solution25
         }
     }
 
-    private boolean match(String input, String regex)
+    private boolean match(String input, String regex, boolean mustMatchEntireString)
     {
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(input);
 
-        return matcher.matches();
+        if(mustMatchEntireString)
+        {
+            return matcher.matches();
+        }
+        else
+        {
+            return matcher.find();
+        }
     }
 
     private boolean isVeryWeak(String password)
     {
         // Check if password only contains numbers (very weak)
 
-        return match(password, "^\\d+$");
+        return match(password, "^\\d+$", true);
     }
 
     private boolean isWeak(String password)
     {
         // Check if password only contains letters (weak)
 
-        return match(password, "^[a-zA-Z]+$");
+        return match(password, "^[a-zA-Z]+$", true);
     }
 //
     private boolean isStrong(String password)
@@ -98,10 +105,10 @@ public class Solution25
 
         // Match only alphanumeric passwords
 
-        return match(password, "^[a-zA-Z\\d]+$\"")
+        return match(password, "^[a-zA-Z\\d]+$", true)
 
                 // Make sure password has at least one digit
-                && match(password, "\\d+");
+                && match(password, "\\d+", false);
     }
 //
 //    private boolean isVeryStrong(String password)
