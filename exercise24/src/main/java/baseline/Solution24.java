@@ -6,6 +6,7 @@
 package baseline;
 
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Scanner;
 
 public class Solution24
@@ -52,7 +53,7 @@ public class Solution24
     {
         HashMap<Character, Integer> freq1 = new HashMap<>();
         HashMap<Character, Integer> freq2 = new HashMap<>();
-        final String alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        HashSet<Character> seen = new HashSet<>();
 
         // Check lengths of str1 and str2. If they don't match, they can't be anagrams.
         if(str1.length() == str2.length())
@@ -67,6 +68,7 @@ public class Solution24
                 else
                 {
                     freq1.put(c, 1);
+                    seen.add(c);
                 }
             }
 
@@ -80,18 +82,19 @@ public class Solution24
                 else
                 {
                     freq2.put(c, 1);
+                    seen.add(c);
                 }
             }
 
             // Compare characters and frequencies.
-            for(char letter : alphabet.toCharArray())
+            for(Character c : seen)
             {
                 // Letter exists in both, but at different frequencies
-                if(freq1.containsKey(letter) && freq2.containsKey(letter)
-                        && (!freq1.get(letter).equals(freq2.get(letter)))
+                if(freq1.containsKey(c) && freq2.containsKey(c)
+                        && (!freq1.get(c).equals(freq2.get(c)))
 
                         // Letter exists in one, but not the other
-                        || (freq1.containsKey(letter) != freq2.containsKey(letter)))
+                        || (freq1.containsKey(c) != freq2.containsKey(c)))
                 {
                     return false;
                 }
