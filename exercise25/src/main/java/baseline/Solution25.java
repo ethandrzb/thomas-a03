@@ -54,7 +54,7 @@ public class Solution25
             // Else
             // Check if password is very strong
             // CHANGE THIS
-            if(false)
+            if(isVeryStrong(password))
             {
                 // If so, return 3
                 return 3;
@@ -110,24 +110,26 @@ public class Solution25
                 // Make sure password has at least one digit
                 && match(password, "\\d+", false);
     }
-//
-//    private boolean isVeryStrong(String password)
-//    {
-//        // Check if password contains letters, numbers, and special characters (very strong)
-//
-//        // This approach starts by checking that a password matches at least one of 3 cases (first regex)
-//        // Afterwards, each case is checked individually (remaining regexes)
-//
-//        // Match passwords with alphanumeric and special characters
-//        // Regex = "[a-zA-Z\d !"#$%&'()*+,\-./:;<=>?@[\]^_`{|}~]+"
-//
-//        // Make sure password has letters
-//        // Regex = "[a-zA-Z]+"
-//
-//        // Make sure password has numbers
-//        // Regex = "\d+"
-//
-//        // Make sure password has special characters
-//        // Regex = "[ !"#$%&'()*+,\-./:;<=>?@[\]^_`{|}~]+"
-//    }
+
+    private boolean isVeryStrong(String password)
+    {
+        // Check if password contains letters, numbers, and special characters (very strong)
+
+        // This approach starts by checking that a password matches at least one of 3 cases (first regex)
+        // Afterwards, each case is checked individually (remaining regexes)
+
+        // Match passwords with alphanumeric and special characters
+        // Regex = "[a-zA-Z\d !"#$%&'()*+,\-./:;<=>?@[\]^_`{|}~]+"
+        return match(password, "[a-zA-Z\\d !\"#$%&'()*+,\\-./:;<=>?@\\[\\]^_`{|}~]+", true)
+
+        // Make sure password has letters
+        // Regex = "[a-zA-Z]+"
+                    && match(password, "[a-zA-Z]+", false)
+        // Make sure password has numbers
+        // Regex = "\d+"
+                    && match(password, "\\d+", false)
+        // Make sure password has special characters
+        // Regex = "[ !"#$%&'()*+,\-./:;<=>?@[\]^_`{|}~]+"
+                    && match(password,"[ !\"#$%&'()*+,\\-./:;<=>?@\\[\\]^_`{|}~]+" , false);
+    }
 }
