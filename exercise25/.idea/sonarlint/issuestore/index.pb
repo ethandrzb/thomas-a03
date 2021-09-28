@@ -7,3 +7,12 @@ X
 gradlew,5\b\5bbfa66edb4db3c7c33c5181f43510990d3307f9
 ?
 settings.gradle,0\5\05efc8b1657769a27696d478ded1e95f38737233
+:
+
+.gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
+<
+build.gradle,f\0\f07866736216be0ee2aba49e392191aeae700a35
+Z
+*src/test/java/baseline/Solution25Test.java,a\a\aa28fdc8b3aeea8d321b6f4a42eb1a7e6ecd1b13
+V
+&src/main/java/baseline/Solution25.java,d\e\de910ab7a83b3c9334bcfca066d815e896729cc8
