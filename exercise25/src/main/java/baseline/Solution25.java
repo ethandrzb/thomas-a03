@@ -53,7 +53,7 @@ public class Solution25
         {
             // Else
             // Check if password is very strong
-            // CHANGE THIS
+            // Need to check for very strong before strong, because very strong passwords are also strong passwords.
             if(isVeryStrong(password))
             {
                 // If so, return 3
@@ -66,7 +66,6 @@ public class Solution25
                 // Else, return -1 (unknown strength)
                 return isStrong(password) ? 2 : -1;
             }
-
         }
     }
 
@@ -119,17 +118,15 @@ public class Solution25
         // Afterwards, each case is checked individually (remaining regexes)
 
         // Match passwords with alphanumeric and special characters
-        // Regex = "[a-zA-Z\d !"#$%&'()*+,\-./:;<=>?@[\]^_`{|}~]+"
         return match(password, "[a-zA-Z\\d !\"#$%&'()*+,\\-./:;<=>?@\\[\\]^_`{|}~]+", true)
 
         // Make sure password has letters
-        // Regex = "[a-zA-Z]+"
                     && match(password, "[a-zA-Z]+", false)
+
         // Make sure password has numbers
-        // Regex = "\d+"
                     && match(password, "\\d+", false)
+
         // Make sure password has special characters
-        // Regex = "[ !"#$%&'()*+,\-./:;<=>?@[\]^_`{|}~]+"
                     && match(password,"[ !\"#$%&'()*+,\\-./:;<=>?@\\[\\]^_`{|}~]+" , false);
     }
 }

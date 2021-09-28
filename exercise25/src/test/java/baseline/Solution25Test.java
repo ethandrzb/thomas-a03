@@ -11,7 +11,6 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class Solution25Test
 {
-//    private static final String[] testPasswords = {"12345", "abcdef", "abc123xyz", "1337h@xor!"};
     @Test
     void passwordValidator_case_1()
     {
@@ -42,5 +41,24 @@ class Solution25Test
         Solution25 sol = new Solution25();
 
         assertEquals(3,sol.passwordValidator("1337h@xor!"));
+    }
+
+    @Test
+    void passwordValidator_unknown_strength_case_1()
+    {
+        Solution25 sol = new Solution25();
+
+        // Numbers and letters, but less than 8 characters
+
+        assertEquals(-1,sol.passwordValidator("ab23"));
+    }
+    @Test
+    void passwordValidator_unknown_strength_case_2()
+    {
+        Solution25 sol = new Solution25();
+
+        // More than 8 characters, but only letters
+
+        assertEquals(-1,sol.passwordValidator("abcdefgh"));
     }
 }
