@@ -1,5 +1,5 @@
 /*
- *  UCF COP3330 Fall 2021 Assignment 2 Solution 24
+ *  UCF COP3330 Fall 2021 Assignment 3 Solution 25
  *  Copyright 2021 Ethan Thomas
  */
 
@@ -14,6 +14,8 @@ public class Solution25
         // Determine strength of password
 
         // Display appropriate response based on password strength
+
+        // Exit
     }
     public int passwordValidator(String password)
     {
