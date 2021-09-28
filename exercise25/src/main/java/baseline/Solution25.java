@@ -5,21 +5,54 @@
 
 package baseline;
 
+import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Solution25
 {
+    private static final Scanner sc = new Scanner(System.in);
     public static void main(String[] args)
     {
-        // Prompt user for their password
+        Solution25 sol = new Solution25();
 
-        // Determine strength of password
+        // Prompt user for their password
+        System.out.print("Enter your password to analyze its strength: ");
+
+        String userPassword = sc.nextLine();
 
         // Display appropriate response based on password strength
+        System.out.println(sol.generatePasswordReport(userPassword));
 
         // Exit
+        System.exit(0);
     }
+    private String strengthNumberToName(int strength)
+    {
+        return switch (strength) {
+            case 0 -> "very weak";
+            case 1 -> "weak";
+            case 2 -> "strong";
+            case 3 -> "very strong";
+            default -> "unknown strength";
+        };
+    }
+
+    private String generatePasswordReport(String password)
+    {
+        // Determine strength of password
+        int strength = passwordValidator(password);
+
+        if(strength == -1)
+        {
+            return "The password '" + password + "' is of unknown strength.";
+        }
+        else
+        {
+            return "The password '" + password + "' is a " + strengthNumberToName(strength) + " password.";
+        }
+    }
+
     public int passwordValidator(String password)
     {
         // Password Strength Scale
