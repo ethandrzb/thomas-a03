@@ -11,6 +11,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class Solution25Test
 {
+//    private static final String[] testPasswords = {"12345", "abcdef", "abc123xyz", "1337h@xor!"};
     @Test
     void passwordValidator_case_1()
     {
@@ -34,12 +35,12 @@ class Solution25Test
 
         assertEquals(2,sol.passwordValidator("abc123xyz"));
     }
-
-    @Test
-    void passwordValidator_case_4()
-    {
-        Solution25 sol = new Solution25();
-
-        assertEquals(3,sol.passwordValidator("1337h@xor!"));
-    }
+//
+//    @Test
+//    void passwordValidator_case_4()
+//    {
+//        Solution25 sol = new Solution25();
+//
+//        assertEquals(3,sol.passwordValidator("1337h@xor!"));
+//    }
 }
