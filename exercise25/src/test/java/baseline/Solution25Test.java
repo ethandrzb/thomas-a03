@@ -52,6 +52,7 @@ class Solution25Test
 
         assertEquals(-1,sol.passwordValidator("ab23"));
     }
+
     @Test
     void passwordValidator_unknown_strength_case_2()
     {
@@ -60,5 +61,15 @@ class Solution25Test
         // More than 8 characters, but only letters
 
         assertEquals(-1,sol.passwordValidator("abcdefgh"));
+    }
+
+    @Test
+    void passwordValidator_unknown_strength_case_3()
+    {
+        Solution25 sol = new Solution25();
+
+        // More than 8 characters, but only special characters
+
+        assertEquals(-1,sol.passwordValidator("$#%] ^\\%@!"));
     }
 }
