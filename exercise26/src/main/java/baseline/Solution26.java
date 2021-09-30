@@ -28,7 +28,8 @@ public class Solution26
         PaymentCalculator payCal = new PaymentCalculator(balance, apr, monthlyPayment);
 
         // Display results
-        System.out.println("It will take you " + payCal.calculateMonthsUntilPaidOff() + " months to pay off this card.");
+        System.out.println("It will take you " + payCal.calculateMonthsUntilPaidOff()
+                + " months to pay off this card.");
 
         // Exit
         System.exit(0);
@@ -66,7 +67,8 @@ class PaymentCalculator
     {
         // Compute number of months until card is paid off
 
-        return (int)Math.ceil(-(1.0 / 30.0) * (Math.log(1 + roundToNearestCent(balance / monthlyPayment) * (1 - Math.pow(1 + dailyRate, 30)))) / Math.log(1 + dailyRate));
+        return (int)Math.ceil(-(1.0 / 30.0) * (Math.log(1 + roundToNearestCent(balance / monthlyPayment)
+                * (1 - Math.pow(1 + dailyRate, 30)))) / Math.log(1 + dailyRate));
     }
 
     private double roundToNearestCent(double amount)
