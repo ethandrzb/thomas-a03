@@ -5,28 +5,39 @@
 
 package baseline;
 
+import java.util.Scanner;
+
 public class Solution26
 {
+    private static final Scanner sc = new Scanner(System.in);
+
     public static void main(String[] args)
     {
-        // Prompt user for credit card balance
+        Solution26 sol = new Solution26();
 
-        // Store input as double
+        // Prompt user for credit card balance
+        double balance = sol.getDoubleFromUser("What is your balance?");
 
         // Prompt user for card APR
-
-        // Store input as double
+        double apr = sol.getDoubleFromUser("What is the APR on the card (as a percent)?");
 
         // Prompt user for their monthly payment
-
-        // Store input as double
+        double monthlyPayment = sol.getDoubleFromUser("What is the monthly payment you can make?");
 
         // Compute number of months needed to pay off card
+        PaymentCalculator payCal = new PaymentCalculator(balance, apr, monthlyPayment);
 
         // Display results
+        System.out.println("It will take you " + payCal.calculateMonthsUntilPaidOff() + " months to pay off this card.");
 
         // Exit
         System.exit(0);
+    }
+    private double getDoubleFromUser(String prompt)
+    {
+        System.out.print(prompt + " ");
+
+        return sc.nextDouble();
     }
 }
 
