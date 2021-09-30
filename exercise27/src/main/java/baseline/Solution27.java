@@ -30,7 +30,7 @@ public class Solution27
         String employeeID = sol.getStringFromUser("Enter the employee ID");
 
         // Display validation report
-        sol.printInputValidationReport(firstName, lastName, zipCode, employeeID);
+        sol.validateInput(firstName, lastName, zipCode, employeeID);
 
         // Exit
         System.exit(0);
@@ -43,7 +43,7 @@ public class Solution27
         return sc.nextLine();
     }
 
-    public void printInputValidationReport(String firstName, String lastName, String zipCode, String employeeID)
+    public void validateInput(String firstName, String lastName, String zipCode, String employeeID)
     {
         String report = "";
         boolean errorEncountered = false;
