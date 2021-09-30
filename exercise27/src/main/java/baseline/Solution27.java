@@ -15,17 +15,25 @@ public class Solution27
 
     public static void main(String[] args)
     {
+        Solution27 sol = new Solution27();
+
         // Prompt user for first name
+        String firstName = sol.getStringFromUser("Enter the first name");
 
         // Prompt user for last name
+        String lastName = sol.getStringFromUser("Enter the last name");
 
         // Prompt user for ZIP code
+        String zipCode = sol.getStringFromUser("Enter the ZIP code");
 
         // Prompt user for employee ID
+        String employeeID = sol.getStringFromUser("Enter the employee ID");
 
         // Display validation report
+        sol.printInputValidationReport(firstName, lastName, zipCode, employeeID);
 
         // Exit
+        System.exit(0);
     }
 
     public String getStringFromUser(String prompt)
@@ -37,17 +45,57 @@ public class Solution27
 
     public void printInputValidationReport(String firstName, String lastName, String zipCode, String employeeID)
     {
+        String report = "";
+        boolean errorEncountered = false;
+
         // Validate firstName
+        if(isValidName(firstName) == -1)
+        {
+            report += "The first name must be filled in.\n";
+
+            errorEncountered = true;
+        }
+        else if(isValidName(firstName) == -2)
+        {
+            report += "The first name must be at least 2 characters long.\n";
+
+            errorEncountered = true;
+        }
 
         // Validate lastName
+        if(isValidName(lastName) == -1)
+        {
+            report += "The last name must be filled in.\n";
+
+            errorEncountered = true;
+        }
+        else if(isValidName(lastName) == -2)
+        {
+            report += "The last name must be at least 2 characters long.\n";
+
+            errorEncountered = true;
+        }
 
         // Validate zipCode
+        if(!isValidZIPCode(zipCode))
+        {
+            report += "The zipcode must be a 5 digit number.\n";
+            errorEncountered = true;
+        }
 
         // Validate employeeID
+        if(!isValidEmployeeID(employeeID))
+        {
+            report += "The employee ID must be in the format of AA-1234\n";
+        }
 
-        // Generate report
+        if(!errorEncountered)
+        {
+            report = "There were no errors found.\n";
+        }
 
         // Print report
+        System.out.print(report);
     }
 
     private boolean match(String input, String regex)
@@ -58,16 +106,16 @@ public class Solution27
         return matcher.matches();
     }
 
-    public String isValidName(String name)
+    public int isValidName(String name)
     {
         // Check if firstName is non-empty
         if(name.isEmpty())
         {
-            return "empty";
+            return -1;
         }
 
         // Check if name is at least two characters long
-        return match(name, "[\\S\\s]{2,}") ? "OK" : "<2 chars";
+        return match(name, "[\\S\\s]{2,}") ? 0 : -2;
     }
 
     public boolean isValidZIPCode(String zipCode)

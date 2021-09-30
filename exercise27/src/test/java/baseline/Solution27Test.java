@@ -17,13 +17,13 @@ class Solution27Test
     {
         Solution27 sol = new Solution27();
 
-        assertEquals("empty", sol.isValidName(""));
+        assertEquals(-1, sol.isValidName(""));
 
-        assertEquals("<2 chars", sol.isValidName(" "));
-        assertEquals("<2 chars", sol.isValidName("w"));
+        assertEquals(-2, sol.isValidName(" "));
+        assertEquals(-2, sol.isValidName("w"));
 
-        assertEquals("OK", sol.isValidName("name"));
-        assertEquals("OK", sol.isValidName("    "));
+        assertEquals(0, sol.isValidName("name"));
+        assertEquals(0, sol.isValidName("    "));
     }
 
     @Test
