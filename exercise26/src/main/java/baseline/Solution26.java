@@ -5,6 +5,7 @@
 
 package baseline;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Solution26
@@ -36,9 +37,26 @@ public class Solution26
     }
     private double getDoubleFromUser(String prompt)
     {
-        System.out.print(prompt + " ");
+        double value = 0;
+        boolean validInput = false;
 
-        return sc.nextDouble();
+        while(!validInput)
+        {
+            System.out.print(prompt + " ");
+
+            try
+            {
+                value = sc.nextDouble();
+                validInput = true;
+            }
+            catch(InputMismatchException e)
+            {
+                System.out.println("Input must be numeric.");
+
+                sc.nextLine();
+            }
+        }
+        return value;
     }
 }
 
