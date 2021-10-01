@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3385372-c6c7-4b23-8d2b-b53d6105a6ff" name="Changes" comment="Added zero check to pseudocode">
+    <list default="true" id="d3385372-c6c7-4b23-8d2b-b53d6105a6ff" name="Changes" comment="Finished Solution29">
       <change beforePath="$PROJECT_DIR$/src/main/java/baseline/Solution29.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseline/Solution29.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -77,7 +77,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633123047285</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Finished Solution29">
+      <created>1633123717503</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1633123717503</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -94,6 +101,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Start of Solution29" />
     <MESSAGE value="Added zero check to pseudocode" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added zero check to pseudocode" />
+    <MESSAGE value="Finished Solution29" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished Solution29" />
   </component>
 </project>

@@ -20,7 +20,7 @@ public class Solution29
         double rate = sol.getRateFromUser();
 
         // Compute years needed to double investment
-        double yearsNeeded = 72 / rate;
+        double yearsNeeded = sol.getYearsNeededToDoubleInvestment(rate);
 
         // Display years needed to double investment
         System.out.println("It will take " + yearsNeeded + " to double your initial investment.");
@@ -69,5 +69,10 @@ public class Solution29
             }
         }
         return value;
+    }
+
+    public double getYearsNeededToDoubleInvestment(double rate)
+    {
+        return 72 / rate;
     }
 }
