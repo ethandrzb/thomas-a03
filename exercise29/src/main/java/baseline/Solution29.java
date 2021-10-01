@@ -25,6 +25,9 @@ public class Solution29
 
             // Attempt to parse user input as double
 
-            // If successful, exit loop
+            // If successful, check if input is 0
+                // If so, display error message
+                // If not, exit loop
+            // If not, display error message
     }
 }
