@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3385372-c6c7-4b23-8d2b-b53d6105a6ff" name="Changes" comment="Start of Solution29" />
+    <list default="true" id="d3385372-c6c7-4b23-8d2b-b53d6105a6ff" name="Changes" comment="Added zero check to pseudocode">
+      <change beforePath="$PROJECT_DIR$/src/main/java/baseline/Solution29.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseline/Solution29.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,6 +26,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="1yvBS8UkujzHFRnyHVdLjV1kyr2" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -60,7 +70,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633122931221</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added zero check to pseudocode">
+      <created>1633123047285</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1633123047285</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -76,6 +93,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Start of Solution29" />
-    <option name="LAST_COMMIT_MESSAGE" value="Start of Solution29" />
+    <MESSAGE value="Added zero check to pseudocode" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added zero check to pseudocode" />
   </component>
 </project>
