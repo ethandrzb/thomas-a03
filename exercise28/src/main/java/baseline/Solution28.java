@@ -49,7 +49,7 @@ public class Solution28
             }
             catch(InputMismatchException e)
             {
-                // Silently ignore bad input
+                System.out.println("Input must be an integer.");
                 sc.nextLine();
             }
         }
