@@ -4,8 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3385372-c6c7-4b23-8d2b-b53d6105a6ff" name="Changes" comment="Moved computation of years needed to double investment to dedicated function, getYearsNeededToDoubleInvestment.">
-      <change afterPath="$PROJECT_DIR$/src/test/java/baseline/Solution29Test.java" afterDir="false" />
+    <list default="true" id="d3385372-c6c7-4b23-8d2b-b53d6105a6ff" name="Changes" comment="Added unit test">
+      <change afterPath="$PROJECT_DIR$/../exercise30/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exercise30/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exercise30/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exercise30/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exercise30/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exercise30/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exercise30/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exercise30/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exercise30/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exercise30/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exercise30/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exercise30/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exercise30/src/main/java/baseline/Solution30.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633123913319</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added unit test">
+      <created>1633124121747</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1633124121747</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -172,12 +194,14 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Start of Solution29" />
     <MESSAGE value="Added zero check to pseudocode" />
     <MESSAGE value="Finished Solution29" />
     <MESSAGE value="Moved computation of years needed to double investment to dedicated function, getYearsNeededToDoubleInvestment." />
-    <option name="LAST_COMMIT_MESSAGE" value="Moved computation of years needed to double investment to dedicated function, getYearsNeededToDoubleInvestment." />
+    <MESSAGE value="Added unit test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added unit test" />
   </component>
 </project>
