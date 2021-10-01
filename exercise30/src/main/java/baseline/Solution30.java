@@ -20,7 +20,7 @@ public class Solution30
         System.exit(0);
     }
 
-    private String generateMultiplicationTable()
+    public String generateMultiplicationTable()
     {
         StringBuilder table = new StringBuilder();
 
@@ -54,6 +54,7 @@ public class Solution30
         return table.toString();
     }
 
+    // Compute padding needed top accommodate all entries in multiplication table
     private int getPadding(int dimension)
     {
         return (int)Math.ceil(Math.log10(dimension)) + 3;
