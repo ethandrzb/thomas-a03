@@ -35,7 +35,7 @@ public class Solution33
         System.exit(0);
     }
 
-    public int getRandomNumber()
+    private int getRandomNumber()
     {
         return rand.nextInt(responses.length);
     }
