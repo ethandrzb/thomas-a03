@@ -17,7 +17,7 @@ dependencies {
 }
 
 application{
-    mainClassName = "baseline.Solution33"
+    mainClassName = "baseline.Solution34"
 }
 
 run{
