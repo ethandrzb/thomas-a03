@@ -55,7 +55,7 @@ public class Solution32
         return value;
     }
 
-    private boolean continueGame()
+    private boolean continuePlaying()
     {
         String userInput;
 
@@ -88,7 +88,7 @@ public class Solution32
             // Run game
             guessTheNumber();
 
-        }while(continueGame());
+        }while(continuePlaying());
     }
 
     private void guessTheNumber()
@@ -99,7 +99,7 @@ public class Solution32
         int difficultyLevel = getIntFromUser("Enter the difficulty level (1, 2, or 3): ", false);
 
         // Get target number for user to guess
-        int target = generateTargetNumber(difficultyLevel, System.currentTimeMillis());
+        int target = generateTargetNumber(difficultyLevel);
 
         // Prompt user for first guess
         int guess = getIntFromUser("I have my number. What's your guess? ", true);
@@ -128,9 +128,9 @@ public class Solution32
         System.out.println("You got it in " + numGuesses + " guesses!");
     }
 
-    public int generateTargetNumber(int difficultyLevel, long seed)
+    public int generateTargetNumber(int difficultyLevel)
     {
-        Random rand = new Random(seed);
+        Random rand = new Random(System.currentTimeMillis());
 
         // Get maximum value for target number
         int maxTargetValue = convertDifficultyLevelToTargetRange(difficultyLevel);
