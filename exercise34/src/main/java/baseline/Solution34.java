@@ -11,7 +11,7 @@ import java.util.Scanner;
 public class Solution34
 {
     private static final Scanner sc = new Scanner(System.in);
-    private static ArrayList<String> employeeList = new ArrayList<>();
+    private static final ArrayList<String> employeeList = new ArrayList<>();
 
     public static void main(String[] args)
     {
@@ -39,8 +39,9 @@ public class Solution34
 
     public void generateEmployeeList()
     {
+        employeeList.clear();
         employeeList.add("John Smith");
-        employeeList.add("Jackie Johnson");
+        employeeList.add("Jackie Jackson");
         employeeList.add("Chris Jones");
         employeeList.add("Amanda Cullen");
         employeeList.add("Jeremy Goodwin");
@@ -61,5 +62,10 @@ public class Solution34
     public void removeEmployee(String employeeName)
     {
         employeeList.remove(employeeName);
+    }
+
+    public String[] getEmployeeList()
+    {
+        return employeeList.toArray(new String[0]);
     }
 }
