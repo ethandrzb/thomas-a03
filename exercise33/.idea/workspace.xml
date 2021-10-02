@@ -5,13 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f4c93c3-e389-4373-8c45-90bacb316a50" name="Changes" comment="Added copyright header to test file">
-      <change afterPath="$PROJECT_DIR$/../exercise34/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../exercise34/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../exercise34/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../exercise34/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../exercise34/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../exercise34/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../exercise34/src/main/java/baseline/Solution34.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exercise35/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exercise35/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exercise35/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exercise35/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exercise35/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exercise35/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exercise35/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exercise35/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exercise35/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exercise35/src/main/java/baseline/Solution35.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercise34/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../exercise34/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
