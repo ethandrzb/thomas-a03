@@ -23,7 +23,7 @@ public class Solution31
         int age = sol.getIntFromUser("Age");
 
         // Generate target heart rate table
-        String targetHeartRateTable = sol.generateTargetHeartRateTable(age, restingHeartRate);
+        String targetHeartRateTable = sol.generateTargetHeartRateTable(restingHeartRate, age);
 
         // Display table
         System.out.print(targetHeartRateTable);
@@ -54,7 +54,7 @@ public class Solution31
         return value;
     }
 
-    public String generateTargetHeartRateTable(int age, int restingHeartRate)
+    public String generateTargetHeartRateTable(int restingHeartRate, int age)
     {
         StringBuilder table = new StringBuilder();
 
@@ -67,7 +67,7 @@ public class Solution31
         {
             // Compute the target heart rate
             // Append intensity and target heart rate to table
-            table.append(generateTargetHeartRateTableRow(i, getTargetHeartRate(age, restingHeartRate, i)));
+            table.append(generateTargetHeartRateTableRow(i, getTargetHeartRate(restingHeartRate, age, i)));
         }
 
         // Return table
@@ -79,7 +79,7 @@ public class Solution31
         return String.format("%13s| %7s%n", intensity + "%", targetHeartRate + " BPM");
     }
 
-    public int getTargetHeartRate(int age, int restingHeartRate, int intensity)
+    public int getTargetHeartRate(int restingHeartRate, int age, int intensity)
     {
         // Compute target heart rate for given age, resting heart rate, and intensity
         double intensityFactor = intensity / 100.0;
