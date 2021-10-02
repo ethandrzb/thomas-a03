@@ -59,7 +59,7 @@ public class Solution31
         StringBuilder table = new StringBuilder();
 
         // Generate table header
-        table.append(String.format("%13s| %7s%n", "Intensity", "Rate"));
+        table.append(String.format("%-13s| %7s%n", "Intensity", "Rate"));
         table.append("-------------|--------\n");
 
         // For each intensity i from 55% to 95%
@@ -76,7 +76,7 @@ public class Solution31
 
     private String generateTargetHeartRateTableRow(int intensity, int targetHeartRate)
     {
-        return String.format("%13s| %7s%n", intensity + "%", targetHeartRate + " BPM");
+        return String.format("%-13s| %7s%n", intensity + "%", targetHeartRate + " BPM");
     }
 
     public int getTargetHeartRate(int restingHeartRate, int age, int intensity)

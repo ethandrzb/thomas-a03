@@ -17,17 +17,17 @@ class Solution31Test {
         Solution31 sol = new Solution31();
 
         String expected = """
-                    Intensity|    Rate\r
-                -------------|--------
-                          55%| 138 BPM\r
-                          60%| 145 BPM\r
-                          65%| 151 BPM\r
-                          70%| 158 BPM\r
-                          75%| 165 BPM\r
-                          80%| 171 BPM\r
-                          85%| 178 BPM\r
-                          90%| 185 BPM\r
-                          95%| 191 BPM\r
+            Intensity    |    Rate\r
+            -------------|--------
+            55%          | 138 BPM\r
+            60%          | 145 BPM\r
+            65%          | 151 BPM\r
+            70%          | 158 BPM\r
+            75%          | 165 BPM\r
+            80%          | 171 BPM\r
+            85%          | 178 BPM\r
+            90%          | 185 BPM\r
+            95%          | 191 BPM\r
                           """;
         assertEquals(expected, sol.generateTargetHeartRateTable(65, 22));
     }
