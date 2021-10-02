@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f30a7130-b40b-4a0d-a7a5-d39ea6e624ed" name="Changes" comment="Removed redundant break condition from main game loop&#10;Added seed parameter to generateTargetNumber to allow for repeatable testing.&#10;Moved conversion of difficulty level to target number to separate function">
-      <change afterPath="$PROJECT_DIR$/src/test/java/baseline/Solution32Test.java" afterDir="false" />
+    <list default="true" id="f30a7130-b40b-4a0d-a7a5-d39ea6e624ed" name="Changes" comment="Added unit test&#10;Refactored code for readability&#10;Removed seed parameter for generateTargetNumber as the reproducibility it enabled was never used">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/baseline/Solution32.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseline/Solution32.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercise33/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../exercise33/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercise33/src/main/java/baseline/Solution33.java" beforeDir="false" afterPath="$PROJECT_DIR$/../exercise33/src/main/java/baseline/Solution33.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633205893276</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added unit test&#10;Refactored code for readability&#10;Removed seed parameter for generateTargetNumber as the reproducibility it enabled was never used">
+      <created>1633208741160</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1633208741160</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -206,6 +212,7 @@
     <MESSAGE value="Finished Solution32" />
     <MESSAGE value="Cleaned up main game loop.&#10;numGuesses now resets to 0 between consecutive runs." />
     <MESSAGE value="Removed redundant break condition from main game loop&#10;Added seed parameter to generateTargetNumber to allow for repeatable testing.&#10;Moved conversion of difficulty level to target number to separate function" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed redundant break condition from main game loop&#10;Added seed parameter to generateTargetNumber to allow for repeatable testing.&#10;Moved conversion of difficulty level to target number to separate function" />
+    <MESSAGE value="Added unit test&#10;Refactored code for readability&#10;Removed seed parameter for generateTargetNumber as the reproducibility it enabled was never used" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added unit test&#10;Refactored code for readability&#10;Removed seed parameter for generateTargetNumber as the reproducibility it enabled was never used" />
   </component>
 </project>
