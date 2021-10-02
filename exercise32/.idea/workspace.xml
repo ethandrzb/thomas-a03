@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f30a7130-b40b-4a0d-a7a5-d39ea6e624ed" name="Changes" comment="Start of Solution32">
-      <change afterPath="$PROJECT_DIR$/../exercise30/.idea/sonarlint/issuestore/f/b/fbe448ebfc3eb2d4e308f6b8b043666f5b57235e" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../exercise31/.idea/sonarlint/issuestore/5/c/5cafb99e82926136c2f1d044c79185ad9c24e74e" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../exercise31/.idea/sonarlint/issuestore/8/0/80e0cf5529fe6ad60c2678b057ceab186ff7d4f3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../exercise31/.idea/sonarlint/issuestore/a/5/a5cc2925ca8258af241be7e5b0381edf30266302" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../exercise31/.idea/sonarlint/issuestore/f/0/f07866736216be0ee2aba49e392191aeae700a35" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../exercise29/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../exercise29/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../exercise29/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../exercise29/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../exercise30/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../exercise30/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../exercise31/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../exercise31/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="f30a7130-b40b-4a0d-a7a5-d39ea6e624ed" name="Changes" comment="Finished Solution32">
       <change beforePath="$PROJECT_DIR$/src/main/java/baseline/Solution32.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseline/Solution32.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -136,7 +124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633139435203</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Finished Solution32">
+      <created>1633144245551</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1633144245551</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -154,6 +149,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Start of Solution32" />
-    <option name="LAST_COMMIT_MESSAGE" value="Start of Solution32" />
+    <MESSAGE value="Finished Solution32" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished Solution32" />
   </component>
 </project>

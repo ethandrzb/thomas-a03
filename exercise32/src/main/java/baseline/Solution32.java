@@ -93,6 +93,8 @@ public class Solution32
 
     private void guessTheNumber()
     {
+        numGuesses = 0;
+
         // Prompt user for difficulty level
         int difficultyLevel = getIntFromUser("Enter the difficulty level (1, 2, or 3): ", false);
 
@@ -111,19 +113,20 @@ public class Solution32
             {
                 System.out.print("Too low. ");
             }
-            else if(guess > target)
-            {
-                System.out.print("Too high. ");
-            }
             else
             {
-                break;
+                System.out.print("Too high. ");
             }
 
             // Prompt user for their guess
             guess = getIntFromUser("Guess again: ", true);
             // Increment number of guesses made so far
             numGuesses++;
+
+            if(guess == target)
+            {
+                break;
+            }
         }
 
         // Display game results
