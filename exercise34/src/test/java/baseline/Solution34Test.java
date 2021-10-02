@@ -1,5 +1,5 @@
 /*
- * / UCF COP3330 Fall 2021 Assignment 3 Solution 34 Test
+ * UCF COP3330 Fall 2021 Assignment 3 Solution 34 Test
  *  Copyright 2021 Ethan Thomas
  */
 
