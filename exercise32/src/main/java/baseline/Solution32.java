@@ -5,44 +5,145 @@
 
 package baseline;
 
+import java.util.Random;
+import java.util.Scanner;
+
 public class Solution32
 {
+    private static final Scanner sc = new Scanner(System.in);
+
+    private int numGuesses;
+
     public static void main(String[] args)
     {
+        Solution32 sol = new Solution32();
+
         // Display title
+        System.out.println("Let's play Guess the Number!");
 
         // Run game
+        sol.gameRunner();
 
         // Exit
+        System.exit(0);
+    }
+
+    private int getIntFromUser(String prompt, boolean increaseGuessOnInvalidInput)
+    {
+        int value;
+
+        while(true)
+        {
+            System.out.print(prompt);
+
+            try
+            {
+                value = Integer.parseInt(sc.nextLine());
+                break;
+            }
+            catch(NumberFormatException e)
+            {
+                System.out.println("Input must be an integer.");
+
+                // Count invalid input as wrong guess
+                if(increaseGuessOnInvalidInput)
+                {
+                    numGuesses++;
+                }
+            }
+        }
+        return value;
+    }
+
+    private boolean continueGame()
+    {
+        String userInput;
+
+        while(true)
+        {
+            // Ask user if they want to play again
+            System.out.print("Do you wish to play again (Y/N)? ");
+
+            userInput = sc.nextLine();
+
+            if(userInput.equals("Y") || userInput.equals("y"))
+            {
+                return true;
+            }
+            else if(userInput.equals("N") || userInput.equals("n"))
+            {
+                return false;
+            }
+            else
+            {
+                System.out.println("Invalid choice entered. Enter 'Y' for yes or 'N' for no.");
+            }
+        }
     }
 
     private void gameRunner()
     {
-        // Run game
+        do
+        {
+            // Run game
+            guessTheNumber();
 
-        // Ask user if they want to play again
-            // If so, run game
-            // If not, return
+        }while(continueGame());
     }
 
     private void guessTheNumber()
     {
         // Prompt user for difficulty level
+        int difficultyLevel = getIntFromUser("Enter the difficulty level (1, 2, or 3): ", false);
 
         // Get target number for user to guess
+        int target = generateTargetNumber(difficultyLevel);
 
         // Prompt user for first guess
+        int guess = getIntFromUser("I have my number. What's your guess? ", true);
+        numGuesses++;
 
         // while user's guess is incorrect
+        while(guess != target)
+        {
             // Display whether the user's guess was too high or too low
+            if(guess < target)
+            {
+                System.out.print("Too low. ");
+            }
+            else if(guess > target)
+            {
+                System.out.print("Too high. ");
+            }
+            else
+            {
+                break;
+            }
+
             // Prompt user for their guess
+            guess = getIntFromUser("Guess again: ", true);
             // Increment number of guesses made so far
+            numGuesses++;
+        }
 
         // Display game results
+        System.out.println("You got it in " + numGuesses + " guesses!");
     }
 
     private int generateTargetNumber(int difficultyLevel)
     {
+        Random rand = new Random(System.currentTimeMillis());
+
+        // Convert difficulty level to target value range
+        int maxTargetValue = switch(difficultyLevel)
+                {
+                    case 1 -> 10;
+                    case 2 -> 100;
+                    case 3 -> 1000;
+                    default -> 1;
+                };
+
         // Randomly generate target number within range set by difficulty
+        return rand.nextInt(maxTargetValue) + 1;
     }
 }
