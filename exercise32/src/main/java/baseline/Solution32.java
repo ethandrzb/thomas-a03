@@ -28,7 +28,7 @@ public class Solution32
         System.exit(0);
     }
 
-    private int getIntFromUser(String prompt, boolean increaseGuessOnInvalidInput)
+    private int getIntFromUser(String prompt, boolean increaseNumGuessesOnInvalidInput)
     {
         int value;
 
@@ -46,7 +46,7 @@ public class Solution32
                 System.out.println("Input must be an integer.");
 
                 // Count invalid input as wrong guess
-                if(increaseGuessOnInvalidInput)
+                if(increaseNumGuessesOnInvalidInput)
                 {
                     numGuesses++;
                 }
@@ -99,7 +99,7 @@ public class Solution32
         int difficultyLevel = getIntFromUser("Enter the difficulty level (1, 2, or 3): ", false);
 
         // Get target number for user to guess
-        int target = generateTargetNumber(difficultyLevel);
+        int target = generateTargetNumber(difficultyLevel, System.currentTimeMillis());
 
         // Prompt user for first guess
         int guess = getIntFromUser("I have my number. What's your guess? ", true);
@@ -122,31 +122,32 @@ public class Solution32
             guess = getIntFromUser("Guess again: ", true);
             // Increment number of guesses made so far
             numGuesses++;
-
-            if(guess == target)
-            {
-                break;
-            }
         }
 
         // Display game results
         System.out.println("You got it in " + numGuesses + " guesses!");
     }
 
-    private int generateTargetNumber(int difficultyLevel)
+    public int generateTargetNumber(int difficultyLevel, long seed)
     {
-        Random rand = new Random(System.currentTimeMillis());
+        Random rand = new Random(seed);
 
+        // Get maximum value for target number
+        int maxTargetValue = convertDifficultyLevelToTargetRange(difficultyLevel);
+
+        // Randomly generate target number within range set by difficulty
+        return rand.nextInt(maxTargetValue) + 1;
+    }
+
+    private int convertDifficultyLevelToTargetRange(int difficultyLevel)
+    {
         // Convert difficulty level to target value range
-        int maxTargetValue = switch(difficultyLevel)
+        return switch(difficultyLevel)
                 {
                     case 1 -> 10;
                     case 2 -> 100;
                     case 3 -> 1000;
                     default -> 1;
                 };
-
-        // Randomly generate target number within range set by difficulty
-        return rand.nextInt(maxTargetValue) + 1;
     }
 }

@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f30a7130-b40b-4a0d-a7a5-d39ea6e624ed" name="Changes" comment="Finished Solution32">
-      <change beforePath="$PROJECT_DIR$/src/main/java/baseline/Solution32.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseline/Solution32.java" afterDir="false" />
-    </list>
+    <list default="true" id="f30a7130-b40b-4a0d-a7a5-d39ea6e624ed" name="Changes" comment="Cleaned up main game loop.&#10;numGuesses now resets to 0 between consecutive runs." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -131,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633144245551</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Cleaned up main game loop.&#10;numGuesses now resets to 0 between consecutive runs.">
+      <created>1633144679120</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1633144679120</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -150,6 +155,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Start of Solution32" />
     <MESSAGE value="Finished Solution32" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished Solution32" />
+    <MESSAGE value="Cleaned up main game loop.&#10;numGuesses now resets to 0 between consecutive runs." />
+    <option name="LAST_COMMIT_MESSAGE" value="Cleaned up main game loop.&#10;numGuesses now resets to 0 between consecutive runs." />
   </component>
 </project>
