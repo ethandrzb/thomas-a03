@@ -31,7 +31,7 @@ public class Solution36
         double std = sol.std(data);
 
         // Display statistics
-        sol.displayAllStatistics(average, min, max, std);
+        sol.displayStatistics(average, min, max, std);
 
         // Exit
         System.exit(0);
@@ -40,11 +40,11 @@ public class Solution36
     private ArrayList<Integer> getDataFromUser()
     {
         ArrayList<Integer> data = new ArrayList<>();
-        // Repeatedly prompt user for data until "done" is entered
 
         String input;
         int number;
 
+        // Repeatedly prompt user for data until "done" is entered
         while(true)
         {
             System.out.print("Enter a number: ");
@@ -56,6 +56,7 @@ public class Solution36
             }
             else
             {
+                // Attempt to parse user input as integer
                 try
                 {
                     number = Integer.parseInt(input);
@@ -79,14 +80,16 @@ public class Solution36
         {
             System.out.print(data.get(i));
 
+            // Don't print a comma after the last data point
             if(i < data.size() - 1)
             {
                 System.out.print(", ");
             }
         }
+        System.out.println();
     }
 
-    private void displayAllStatistics(double average, int min, int max, double std)
+    private void displayStatistics(double average, int min, int max, double std)
     {
         System.out.printf("The average is %.1f%n" +
                 "The minimum is %d%n" +
@@ -123,7 +126,7 @@ public class Solution36
 
         for(int i : data)
         {
-            sumOfSquareDistancesFromAverage += Math.abs(i - avg) * Math.abs(i - avg);
+            sumOfSquareDistancesFromAverage += (Math.abs(i - avg) * Math.abs(i - avg));
         }
 
         return Math.sqrt(sumOfSquareDistancesFromAverage / data.size());
