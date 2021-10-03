@@ -14,27 +14,27 @@ public class Solution35
 {
     private static final Scanner sc = new Scanner(System.in);
     private static final Random rand = new Random(System.currentTimeMillis());
+    public final List<String> names = new ArrayList<>();
 
     public static void main(String[] args)
     {
         Solution35 sol = new Solution35();
 
         // Get names from user
-        ArrayList<String> names = sol.getNamesFromUser();
+        sol.getNamesFromUser();
 
         // Get index of winning name
-        int indexOfWinningName = sol.generateRandomIndex(names);
+        int indexOfWinningName = sol.generateRandomIndex();
 
         // Display chosen name
-        System.out.println("The winner is... " + sol.selectWinner(names, indexOfWinningName));
+        System.out.println("The winner is... " + sol.selectWinner(sol.names, indexOfWinningName));
 
         // Exit
         System.exit(0);
     }
 
-    private ArrayList<String> getNamesFromUser()
+    private void getNamesFromUser()
     {
-        ArrayList<String> names = new ArrayList<>();
         String input;
 
         // Repeatedly prompt a user to enter a name until the name they enter is blank
@@ -52,11 +52,10 @@ public class Solution35
                 break;
             }
         }
-
-        return names;
     }
 
-    public int generateRandomIndex(List<String> names)
+
+    public int generateRandomIndex()
     {
         // Generate a random number to select one of the names entered
         return rand.nextInt(names.size());
