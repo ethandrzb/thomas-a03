@@ -8,6 +8,7 @@ package baseline;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -84,15 +85,27 @@ class Solution37Test
         assertEquals(1, sol.getDigitsAdded());
     }
 
-//    @Test
-//    void getRandomCharClass()
-//    {
-//
-//    }
-//
-//    @Test
-//    void getRandomCharacterFromClass()
-//    {
-//
-//    }
+    @Test
+    void getRandomCharClass()
+    {
+        ArrayList<Solution37.charClass> testClasses = new ArrayList<>();
+        testClasses.add(Solution37.charClass.LETTER);
+        testClasses.add(Solution37.charClass.DIGIT);
+
+        Solution37.charClass selectedClass = sol.getRandomCharClass(testClasses);
+
+        assertTrue((selectedClass == Solution37.charClass.LETTER)
+                            || (selectedClass == Solution37.charClass.DIGIT));
+        assertNotEquals(Solution37.charClass.SPECIAL, selectedClass);
+    }
+
+    @Test
+    void getRandomCharacterFromClass()
+    {
+        char selectedCharacter = sol.getRandomCharacterFromClass(Solution37.charClass.SPECIAL);
+
+        assertFalse(Character.isAlphabetic(selectedCharacter));
+        assertFalse(Character.isDigit(selectedCharacter));
+        assertEquals(1, getNumMatches(String.valueOf(selectedCharacter), "[ !\"#$%&'()*+,\\-./:;<=>?@\\[\\]^_`{|}~]"));
+    }
 }
