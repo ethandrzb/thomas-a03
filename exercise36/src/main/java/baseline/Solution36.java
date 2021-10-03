@@ -5,6 +5,8 @@
 
 package baseline;
 
+import java.util.List;
+
 public class Solution36
 {
     public static void main(String[] args)
@@ -33,22 +35,22 @@ public class Solution36
         // Get standard deviation
     }
 
-    public void computeAverage()
+    public void average(List<Integer> data)
     {
 
     }
 
-    public void computeMinimum()
+    public void min(List<Integer> data)
     {
 
     }
 
-    public void computeMaximum()
+    public void max(List<Integer> data)
     {
 
     }
 
-    public void computeStandardDeviation()
+    public void std(List<Integer> data)
     {
 
     }
