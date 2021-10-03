@@ -6,6 +6,7 @@
 package baseline;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -25,7 +26,7 @@ public class Solution35
         int indexOfWinningName = sol.generateRandomIndex(names);
 
         // Display chosen name
-        System.out.println("The winner is... " + names.get(indexOfWinningName));
+        System.out.println("The winner is... " + sol.selectWinner(names, indexOfWinningName));
 
         // Exit
         System.exit(0);
@@ -41,6 +42,7 @@ public class Solution35
         {
             System.out.print("Enter a name: ");
             input = sc.nextLine();
+
             if(!input.isEmpty())
             {
                 names.add(input);
@@ -54,9 +56,14 @@ public class Solution35
         return names;
     }
 
-    private int generateRandomIndex(ArrayList<String> names)
+    public int generateRandomIndex(List<String> names)
     {
         // Generate a random number to select one of the names entered
         return rand.nextInt(names.size());
+    }
+
+    public String selectWinner(List<String> names, int index)
+    {
+        return names.get(index);
     }
 }
