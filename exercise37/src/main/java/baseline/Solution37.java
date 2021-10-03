@@ -23,7 +23,7 @@ public class Solution37
 
     private static final Scanner sc = new Scanner(System.in);
     private static final Random rand = new Random(System.currentTimeMillis());
-    private enum charClass {LETTER, SPECIAL, DIGIT}
+    enum charClass {LETTER, SPECIAL, DIGIT}
 
     public static void main(String[] args)
     {
@@ -105,6 +105,7 @@ public class Solution37
 
     public String generatePassword(int length, int specialChars, int digits)
     {
+        initPasswordCharLists();
         StringBuilder password = new StringBuilder();
         ArrayList<charClass> classesNeeded = initCharClassesNeeded();
         charClass selectedClass;
@@ -142,9 +143,6 @@ public class Solution37
 
             // Update running stats
             updateStats(selectedClass);
-
-            System.out.println("\nChar classes remaining: " + classesNeeded);
-            System.out.println(needMoreLetters() + " " + needMoreSpecials(specialChars) + " " + needMoreDigits(digits));
         }
 
         // Return generated password
@@ -197,5 +195,20 @@ public class Solution37
 
         // Return the character in the selected character set at this index
         return selectedCharSet.get(index);
+    }
+
+    public int getLettersAdded()
+    {
+        return lettersAdded;
+    }
+
+    public int getSpecialCharsAdded()
+    {
+        return specialCharsAdded;
+    }
+
+    public int getDigitsAdded()
+    {
+        return digitsAdded;
     }
 }
