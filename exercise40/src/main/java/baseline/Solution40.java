@@ -6,6 +6,8 @@
 package baseline;
 
 import java.util.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class Solution40
 {
@@ -30,6 +32,7 @@ public class Solution40
         String query = sc.nextLine();
 
         // Generate sub-database of entries related to search query
+        sol.searchForQuery(query);
 
         // Sort search result database
         sol.sortSearchResults();
@@ -96,6 +99,27 @@ public class Solution40
         emp6.put(POSITION, "Web Developer");
         emp6.put(SEPARATION_DATE, "2015-12-18");
         employeeList.add(emp6);
+    }
+
+    public void searchForQuery(String query)
+    {
+        // Search entire database
+        for(HashMap<String, String> entry : employeeList)
+        {
+            // Query matches entry if it matches part (or all) of the first name field or the last name field.
+            if(matchPart(entry.get(FIRST_NAME), query) || matchPart(entry.get(LAST_NAME), query))
+            {
+                searchResults.add(entry);
+            }
+        }
+    }
+
+    private boolean matchPart(String input, String regex)
+    {
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher(input);
+
+        return matcher.find();
     }
 
     public void sortSearchResults()
@@ -184,5 +208,10 @@ public class Solution40
     public List<HashMap<String, String>> getEmployeeList()
     {
         return employeeList;
+    }
+
+    public List<HashMap<String, String>> getSearchResults()
+    {
+        return searchResults;
     }
 }
