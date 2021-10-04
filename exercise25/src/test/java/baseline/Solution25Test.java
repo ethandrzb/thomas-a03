@@ -72,4 +72,35 @@ class Solution25Test
 
         assertEquals(-1,sol.passwordValidator("$#%] ^\\%@!"));
     }
+
+    @Test
+    void generatePasswordReport_unknown_strength_case_1()
+    {
+        Solution25 sol = new Solution25();
+
+        // Numbers and letters, but less than 8 characters
+
+        assertEquals("The password 'ab23' is of unknown strength.",sol.generatePasswordReport("ab23"));
+    }
+
+    @Test
+    void generatePasswordReport_unknown_strength_case_2()
+    {
+        Solution25 sol = new Solution25();
+
+        // More than 8 characters, but only letters
+
+        assertEquals("The password 'abcdefgh' is of unknown strength.",sol.generatePasswordReport("abcdefgh"));
+    }
+
+    @Test
+    void generatePasswordReport_unknown_strength_case_3()
+    {
+        Solution25 sol = new Solution25();
+
+        // More than 8 characters, but only special characters
+
+        assertEquals("The password '$#%] ^\\%@!' is of unknown strength.",sol.generatePasswordReport("$#%] ^\\%@!"));
+
+    }
 }

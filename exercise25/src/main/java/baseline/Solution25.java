@@ -38,7 +38,7 @@ public class Solution25
         };
     }
 
-    private String generatePasswordReport(String password)
+    public String generatePasswordReport(String password)
     {
         // Determine strength of password
         int strength = passwordValidator(password);
