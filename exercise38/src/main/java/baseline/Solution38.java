@@ -16,9 +16,23 @@ public class Solution38
     {
         Solution38 sol = new Solution38();
 
-        Integer[] numbers;
+        Integer[] numbers = sol.getIntegerArrayFromUser();
 
+        // Generate copy of input array with only even numbers
+        Integer[] evensOnly = sol.filterEvenNumbers(numbers);
+
+        // Display even-only array
+        System.out.println("The even numbers are " + sol.arrayToString(evensOnly) + ".");
+
+        // Exit
+        System.exit(0);
+    }
+
+    private Integer[] getIntegerArrayFromUser()
+    {
+        Integer[] numbers;
         boolean validInput = true;
+
         do
         {
             // Prompt user for list of numbers
@@ -27,6 +41,7 @@ public class Solution38
             // Convert user input to array
             String[] userInput = sc.nextLine().split(" ");
             numbers = new Integer[userInput.length];
+
             for (int i = 0; i < userInput.length; i++)
             {
                 try
@@ -41,14 +56,7 @@ public class Solution38
             }
         } while (!validInput);
 
-        // Generate copy of input array with only even numbers
-        Integer[] evensOnly = sol.filterEvenNumbers(numbers);
-
-        // Display even-only array
-        System.out.println("The even numbers are " + sol.arrayToString(evensOnly) + ".");
-
-        // Exit
-        System.exit(0);
+        return numbers;
     }
 
     public Integer[] filterEvenNumbers(Integer[] array)
