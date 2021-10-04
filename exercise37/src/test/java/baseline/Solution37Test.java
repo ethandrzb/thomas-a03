@@ -106,6 +106,7 @@ class Solution37Test
 
         assertFalse(Character.isAlphabetic(selectedCharacter));
         assertFalse(Character.isDigit(selectedCharacter));
-        assertEquals(1, getNumMatches(String.valueOf(selectedCharacter), "[ !\"#$%&'()*+,\\-./:;<=>?@\\[\\]^_`{|}~]"));
+        assertEquals(1, getNumMatches(String.valueOf(selectedCharacter),
+                "[ !\"#$%&'()*+,\\-./:;<=>?@\\[\\]^_`{|}~]"));
     }
 }

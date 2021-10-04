@@ -4,20 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9f4c93c3-e389-4373-8c45-90bacb316a50" name="Changes" comment="Added copyright header to test file">
-      <change afterPath="$PROJECT_DIR$/../exercise35/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../exercise35/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../exercise35/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../exercise35/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../exercise35/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../exercise35/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../exercise35/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../exercise35/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../exercise35/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../exercise35/src/main/java/baseline/Solution35.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../exercise34/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../exercise34/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="9f4c93c3-e389-4373-8c45-90bacb316a50" name="Changes" comment="Possible responses moved from array to List to match problem specification" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -197,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633210884940</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Possible responses moved from array to List to match problem specification">
+      <created>1633318975945</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1633318975945</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -218,12 +212,14 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Start of Solution33" />
     <MESSAGE value="Finished Solution33" />
     <MESSAGE value="Added unit test" />
     <MESSAGE value="Added copyright header to test file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added copyright header to test file" />
+    <MESSAGE value="Possible responses moved from array to List to match problem specification" />
+    <option name="LAST_COMMIT_MESSAGE" value="Possible responses moved from array to List to match problem specification" />
   </component>
 </project>
