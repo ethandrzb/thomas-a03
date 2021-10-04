@@ -5,6 +5,8 @@
 
 package baseline;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -13,7 +15,7 @@ public class Solution33
     private static final Scanner sc = new Scanner(System.in);
     private static final Random rand = new Random();
 
-    private static final String[] responses = {"Yes", "No", "Maybe", "Ask again later."};
+    private static final ArrayList<String> responses = new ArrayList<>(Arrays.asList("Yes", "No", "Maybe", "Ask again later."));
 
     public static void main(String[] args)
     {
@@ -37,12 +39,12 @@ public class Solution33
 
     private int getRandomNumber()
     {
-        return rand.nextInt(responses.length);
+        return rand.nextInt(responses.size());
     }
 
     public String getResponse(int index)
     {
         // Convert random number to response
-        return responses[index];
+        return responses.get(index);
     }
 }
