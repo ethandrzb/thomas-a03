@@ -87,6 +87,7 @@ public class Solution27
         if(!isValidEmployeeID(employeeID))
         {
             report += "The employee ID must be in the format of AA-1234\n";
+            errorEncountered = true;
         }
 
         if(!errorEncountered)
