@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef8cc166-2a2d-4dcb-bf05-32059aaca28a" name="Changes" comment="Finished Solution40">
-      <change afterPath="$PROJECT_DIR$/src/test/java/baseline/Solution40Test.java" afterDir="false" />
+    <list default="true" id="ef8cc166-2a2d-4dcb-bf05-32059aaca28a" name="Changes" comment="Added unit tests to Solution40&#10;Some tests were reused from Solution39Test">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -181,7 +181,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633316303406</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added unit tests to Solution40&#10;Some tests were reused from Solution39Test">
+      <created>1633317539510</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1633317539510</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -194,11 +201,13 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Start of Solution40" />
     <MESSAGE value="Imported database code from Solution39 to Solution40" />
     <MESSAGE value="Finished Solution40" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished Solution40" />
+    <MESSAGE value="Added unit tests to Solution40&#10;Some tests were reused from Solution39Test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added unit tests to Solution40&#10;Some tests were reused from Solution39Test" />
   </component>
 </project>
