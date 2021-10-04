@@ -23,7 +23,7 @@ public class Solution39
         sol.generateEmployeeDatabase();
 
         // Sort database
-        sol.employeeList.sort(Comparator.comparing(o -> o.get(LAST_NAME)));
+        sol.sortDatabase();
 
         // Display database
         System.out.print(sol.displayDatabase());
@@ -87,6 +87,11 @@ public class Solution39
         emp6.put(POSITION, "Web Developer");
         emp6.put(SEPARATION_DATE, "2015-12-18");
         employeeList.add(emp6);
+    }
+
+    public void sortDatabase()
+    {
+        employeeList.sort(Comparator.comparing(o -> o.get(LAST_NAME)));
     }
 
     public String displayDatabase()
@@ -154,6 +159,7 @@ public class Solution39
         return output.toString();
     }
 
+    // Compute minimum column width needed to accommodate a list of strings
     private int getColumnWidth(List<String> list)
     {
         int max = Integer.MIN_VALUE;
@@ -164,5 +170,10 @@ public class Solution39
         }
 
         return max + 1;
+    }
+
+    public List<HashMap<String, String>> getEmployeeList()
+    {
+        return employeeList;
     }
 }
